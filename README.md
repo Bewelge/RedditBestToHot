@@ -1,4 +1,4 @@
-# RedditBestToHot Chrome Extension
+# [RedditBestToHot Chrome Extension](https://github.com/Bewelge/RedditBestToHot/blob/master/README.md)
 Chrome extension to redirect reddit.com to reddit.com/hot as well as changing the home button links.
 
  - **Only works on old Design!** - 
