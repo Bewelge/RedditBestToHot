@@ -5,7 +5,6 @@ if ("https://www.reddit.com/" == window.location.href) // if it matches pattern 
 	//redirect to /hot
 	window.location.href = "/hot";
 }
-console.log("Im injected");
 //This part is executed after the page has loaded.
 //This is necessary to change the links of the home button in the top bar and the Snoo-link.
 window.onload=function() {
@@ -29,8 +28,11 @@ window.onload=function() {
 		//change home-link in top-bar.
 		let choices = document.getElementsByClassName("choice");
 		for (let key in choices) {
-			if (choices[key].href == "https://www.reddit.com/" && choices[key].innerHTML == "home") {
-				choices[key].href += "hot";
+			if (choices[key].href == "https://www.reddit.com/") {
+				if (choices[key].innerHTML == "home") {
+
+				} else if ( choices[key].innerHTML == "best")
+				choices[key].href += "#best";
 			}
 		}
 		
