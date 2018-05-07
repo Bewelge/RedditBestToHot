@@ -1,0 +1,19 @@
+{
+  "name": "Reddit *BEST -> HOT*",
+  "version": "0.01",
+  "description": "Redirects reddit.com to reddit.com/hot and changes the home-button links to reddit.com/hot",
+  "icons": { "16": "icon16.png",
+          "32": "icon32.png",
+           "48": "icon48.png",
+           "64": "icon64.png",
+          "128": "icon128.png" },
+   "manifest_version": 2,
+   "content_scripts": [
+   {
+     "matches": ["http://www.reddit.com/*", "https://www.reddit.com/*"],
+     "run_at": "document_start",
+     "js": ["content.js"]
+   }
+   ],
+  "permissions": ["tabs"]
+}
